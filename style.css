@@ -4,15 +4,19 @@ body,
 }
 
 .brand {
-  padding: 35px 30px 25px 30px;
-  max-width: 370px;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.brand:last-of-type {
+  margin-bottom: 0px;
 }
 
 .brand-title {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   color: #2c2c2c;
@@ -30,16 +34,17 @@ body,
   cursor: pointer;
 }
 
+.cb-line:hover {
+  opacity: 0.7;
+}
+
 .cb-quantity {
   font-weight: 300;
-  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #2c2c2c;
 }
 
 .cb-name {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 300;
   font-size: 16px;
   color: #2c2c2c;
@@ -56,20 +61,16 @@ body,
   grid-gap: 8px;
 }
 
-.cb-line:hover {
-  opacity: 0.7;
-}
-
 .line-top {
   height: 1px;
   background-color: #d6d6d6;
-  margin: 0px 25px 25px 25px;
+  margin-bottom: 25px;
 }
 
 .line-bottom {
   height: 1px;
   background-color: #d6d6d6;
-  margin: 25px 25px 0px 25px;
+  margin-top: 25px;
 }
 
 .search {
@@ -123,7 +124,6 @@ body,
 
 .similar-blocks {
   display: flex;
-  flex-direction: row;
   width: calc(50% - 15px);
 }
 
@@ -148,7 +148,6 @@ body,
 }
 
 .cong-title {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 28px;
   line-height: 34px;
@@ -157,31 +156,32 @@ body,
 }
 
 .cong-done {
-  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
 }
 
-.subscribers {
+.statistics {
   background-color: #fff;
   background-size: 100%;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.13);
   border-radius: 8px;
   width: calc(50% - 15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.statistics:first-of-type {
   margin-right: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
-.sub-img-top {
+.statistics-img-top {
   margin: 25px 275px 0 32px;
 }
 
-.sub-balance {
-  font-family: "Montserrat", sans-serif;
+.statistics-balance {
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
@@ -190,49 +190,7 @@ body,
   margin-top: 21px;
 }
 
-.sub-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  line-height: 36px;
-  color: #2c2c2c;
-  font-weight: 500;
-  margin-left: 32px;
-}
-
-.sub-img-bottom {
-  margin-top: 15px;
-  margin-top: auto;
-  width: 100%;
-}
-
-.orders {
-  background-color: #fff;
-  background-size: 100%;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
-  border-radius: 8px;
-  width: calc(50% - 15px);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.orders-img-top {
-  margin: 25px 275px 0 32px;
-}
-
-.orders-balance {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-  color: #2c2c2c;
-  margin-left: 32px;
-  margin-top: 21px;
-}
-
-.orders-text {
-  font-family: "Montserrat", sans-serif;
+.statistics-text {
   font-weight: 500;
   font-size: 14px;
   line-height: 36px;
@@ -240,7 +198,7 @@ body,
   margin-left: 32px;
 }
 
-.order-img-bottom {
+.statistics-img-bottom {
   margin-top: 15px;
   margin-top: auto;
   width: 100%;
@@ -254,8 +212,11 @@ body,
   }
 
   .congratulations {
-    width: 1450px;
-    max-width: 100%;
+    width: 100%;
+  }
+
+  .statistics {
+    width: 50%;
   }
 
   .similar-blocks {
@@ -263,7 +224,7 @@ body,
     width: 100%;
   }
 
-  .orders-img-bottom {
+  .statistics-img-bottom {
     margin-top: auto;
     width: 100%;
   }
@@ -275,9 +236,12 @@ body,
     flex-direction: column;
   }
 
-  .subscribers {
+  .statistics {
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  .statistics:first-of-type {
     margin-right: 0;
   }
 
@@ -302,8 +266,15 @@ body,
   .cong-title {
     margin: 0 20px 20px 20px;
   }
+}
 
-  .orders {
-    width: 100%;
-  }
+.sidebar {
+  display: flex;
+  max-width: 370px;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.13);
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 30px;
 }

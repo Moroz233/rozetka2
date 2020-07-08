@@ -1,0 +1,261 @@
+body,
+* {
+  font-family: "Montserrat", sans-serif;
+}
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.card-padding {
+  padding: 16px;
+}
+.card-rating {
+  background: #6f64f8;
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 371px;
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.0778245);
+  border-radius: 8px;
+}
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+.card-price {
+  font-size: 18px;
+  line-height: 21px;
+  color: #2c2c2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-title {
+  font-size: 16px;
+  line-height: 19px;
+  height: 19px;
+  font-weight: 500;
+}
+
+.card-description {
+  margin-top: 3px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #2c2c2c;
+}
+.card-button {
+  background-color: #6f64f8;
+  color: #fff;
+  border: 0px solid transparent;
+  padding: 12px 0;
+  transition: opacity 0.7s;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 0px 0px 8px 8px;
+}
+.card-button:hover {
+  opacity: 0.7;
+}
+.nav-container {
+  width: 280px;
+  background: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.17);
+  padding: 20px;
+}
+
+.nav-container-link {
+  display: flex;
+  align-items: center;
+  padding: 9px 35px;
+  font-size: 15px;
+  color: #2c2c2c;
+  transition: background-color 0.7s;
+  border-radius: 4px;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-container {
+  display: grid;
+  grid-gap: 6px;
+}
+.nav-container-link:hover {
+  background-color: #ececec;
+}
+.nav-container-link-home {
+  background: linear-gradient(188.54deg, #9e94ff 0%, #7e72f2 99.2%);
+  box-shadow: -1px 1px 8px rgba(126, 114, 242, 0.578726);
+  color: #fff;
+}
+.nav-container-link-active {
+}
+
+.icon-home {
+  position: absolute;
+  background-image: url("./images/home.svg");
+  background-size: cover;
+  height: 16px;
+  width: 14px;
+  top: 8px;
+  left: 12px;
+}
+
+.icon-circle {
+  position: absolute;
+  background-image: url("./images/circle.svg");
+  background-size: cover;
+  height: 10px;
+  width: 10px;
+  top: 11px;
+  left: 13px;
+}
+.icon-oval {
+  position: absolute;
+  background-image: url("./images/oval.svg");
+  background-size: cover;
+  height: 10px;
+  width: 10px;
+  top: 11px;
+  left: 13px;
+}
+
+.filter-buttons {
+  display: flex;
+}
+.filter-button {
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button1 {
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 13px;
+  width: 135px;
+  height: 40px;
+}
+.icon-square {
+  margin-right: 13px;
+  width: 40px;
+  height: 40px;
+}
+.button2 {
+  width: 40px;
+  height: 40px;
+}
+.messengers-container {
+  display: flex;
+  flex-direction: column;
+}
+.messengers-container-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+.apps {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  color: #999999;
+}
+.icon-mail {
+  margin-right: 10px;
+}
+.icon-chat {
+  margin-right: 10px;
+}
+.icon-calendar {
+  margin-right: 10px;
+}
+.apps-container-item {
+  padding: 9px 9px;
+}
+
+.timeline-container {
+  max-width: 475px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 24px;
+}
+.timeline-container-item {
+  display: flex;
+  margin-bottom: 33px;
+  align-items: center;
+}
+.timeline-container-item:last-of-type {
+  margin-bottom: 0;
+}
+.timeline-container-info {
+  display: flex;
+  flex-direction: column;
+}
+.timeline-container-heading {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #161616;
+  margin-bottom: 19px;
+}
+.timeline-container-main-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #606060;
+  display: flex;
+  margin-bottom: 1px;
+}
+.timeline-container-title {
+  font-size: 12px;
+  line-height: 14px;
+  color: #606060;
+  margin-bottom: 4px;
+}
+.timeline-container-subtitle {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #606060;
+}
+.timeline-container-icon {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.purple {
+  background: #7e72f2;
+}
+.orange {
+  background: #ff9f43;
+}
+.green {
+  background: #28c76f;
+}
+.red {
+  background: #ea5455;
+}

@@ -3,21 +3,27 @@
     padding-right: 60px;
   }
 }
-@media all and (max-width: 492px) {
+@media all and (max-width: 630px) {
   .list-button {
     padding-left: 30px;
   }
 }
 
-@media all and (max-width: 492px) {
+@media all and (max-width: 630px) {
   .statistic {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
   }
 }
-@media all and (max-width: 340px) {
+@media all and (max-width: 630px) {
   .scale {
     display: grid;
     grid-template-columns: 100%;
+  }
+}
+@media all and (max-width: 630px) {
+  .scale-statistic {
+    width: 100%;
+    max-width: none;
   }
 }

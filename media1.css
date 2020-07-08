@@ -1,0 +1,23 @@
+@media all and (max-width: 820px) {
+  .list-button {
+    padding-right: 60px;
+  }
+}
+@media all and (max-width: 492px) {
+  .list-button {
+    padding-left: 30px;
+  }
+}
+
+@media all and (max-width: 492px) {
+  .statistic {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media all and (max-width: 340px) {
+  .scale {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}

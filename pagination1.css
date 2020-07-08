@@ -1,0 +1,43 @@
+.pagination-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 37px;
+}
+.pagination {
+  background-color: #ededed;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 0 17px;
+}
+.pagination-ul {
+  display: flex;
+  align-items: center;
+}
+
+.pagination-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 117%;
+  font-weight: 600;
+}
+.pagination-div {
+  margin-right: 5px;
+}
+.pagination-button:active {
+  background-color: #6f64f8;
+}
+.pagination-path {
+  width: 40px;
+  height: 40px;
+  background-color: #ededed;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

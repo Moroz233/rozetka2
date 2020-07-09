@@ -6,10 +6,19 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    
+
+    <!--Plugin CSS file with desired skin-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -56,6 +65,40 @@
       <div class="main-content">
         <div class="shop-container">
           <aside class="sidebar">
+            <div class="multi-range">
+              <h2 class="multi-range-text">multi-range</h2>
+              <label class="radio-change">
+                <input type="radio" name="raddioc" id="radio" /><span class="radio-text"></span>$10</span>
+              </label>
+              <label class="radio-change">
+                <input type="radio" name="raddioc" id="radio" /><span class="radio-text">$10-$100</span>
+              </label>
+              <label class="radio-change">
+                <input type="radio" name="raddioc" id="radio" /><span class="radio-text">$100-$500</span>
+              </label>
+              <label class="radio-change">
+                <input type="radio" name="raddioc" id="radio" /><span class="radio-text">$500</span>
+              </label>
+              <label class="radio-change">
+                <input type="radio" name="raddioc" id="radio" /><span class="radio-text">  All</span>
+              </label>
+            </div>
+            <div class="line-block">
+            <div class="slider-text">
+                <span class="s-slider">Slider</span>
+                <span class="from-to">1.99 - 4098</span>
+               </div>
+             <div class="slider-block">
+              <input
+                type="text"
+                class="js-range-slider"
+                name="my_range"
+                value=""
+                data-type="double"
+                skin="round"
+              />
+             </div>
+            </div>
             <div class="brand">
               <span class="brand-title">Category</span>
               <div class="checkbox-all">
@@ -130,7 +173,7 @@
                   <span class="cb-quantity">10</span>
                 </label>
               </div>
-            </div>
+            </div> 
             <div class="brand">
               <span class="brand-title">Brand</span>
               <div class="checkbox-all">
@@ -271,5 +314,7 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
   </body>
+  <script src="script.js"></script>
 </html>

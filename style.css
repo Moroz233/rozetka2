@@ -878,12 +878,13 @@ button {
   background: #ffffff;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.13);
   border-radius: 8px;
+  height: 62px;
+  padding: 0 21px;
 }
 
 .header-icons {
   display: flex;
   align-items: center;
-  padding: 21px;
 }
 
 .header-icons-img {
@@ -905,11 +906,8 @@ button {
   align-items: flex-end;
 }
 
-.header-action-bar {
-  padding: 14px 21px 14px 0;
-}
-
 .header-action-bar-title {
+  font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #2c2c2c;
@@ -929,6 +927,7 @@ button {
 }
 
 .header-action-bar-nick-top {
+  font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   color: #2c2c2c;
@@ -939,4 +938,55 @@ button {
   font-size: 11px;
   line-height: 13px;
   color: #2c2c2c;
+  font-weight: 500;
+}
+
+.menu-btn {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 100px;
+  position: relative;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -10px;
+  margin-top: -1px;
+  height: 2px;
+  width: 20px;
+  background-color: chartreuse;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+  content: "";
+  display: block;
+  transition: 0.5s;
+}
+
+.menu-btn span::before {
+  transform: translateY(-5px);
+}
+
+.menu-btn span::after {
+  transform: translateY(5px);
+}
+
+.menu-btn-active span {
+  height: 0;
+}
+
+.menu-btn-active span::before {
+  transform: rotate(45deg);
+}
+
+.menu-btn-active span::after {
+  transform: rotate(45deg);
 }

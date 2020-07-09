@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="pagination1.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
       rel="stylesheet"
@@ -64,6 +65,7 @@
       </div>
       <div class="main-content">
         <div class="shop-container">
+          <div class="filter">
           <aside class="sidebar">
             <div class="multi-range">
               <h2 class="multi-range-text">multi-range</h2>
@@ -250,6 +252,10 @@
               </div>
             </div>
           </aside>
+          <button class="button-block">
+            <p class="button-block-text">CLEAR ALL FILTERS</p>
+          </button>
+        </div> 
           <div class="shop-content">
             <div class="filter-buttons">
               <button class="button1 filter-button">Default</button>
@@ -285,7 +291,72 @@
             </div>
           </div>
         </div>
+        <div class="bottom-pagination">
+          <div class="pagination-block">
+            <div class="pagination-path">
+              <img class="pagination-path-left" src="images/left.svg" alt="">
+            </div>
+          <nav class="pagination">
+            <ul class="pagination-ul">
+              <li class="pagination-li">
+                <button class="pagination-button">
+                  1<span class="MuiTouchRipple-root"> </span>
+                </button>
+              </li>
+              <li class="pagination-li">
+                <button class="pagination-button">
+                  2<span class="MuiTouchRipple-root"> </span>
+                </button>
+              </li>
+              <li class="pagination-li">
+                <button class="pagination-button">
+                  3<span class="MuiTouchRipple-root"> </span>
+                </button>
+              </li>
+              <li class="pagination-li">
+                <button class="pagination-button">
+                  4<span class="MuiTouchRipple-root"></span>
+                </button>
+              </li>
+              <li class="pagination-li">
+                <button class="pagination-button">
+                  5<span class="MuiTouchRipple-root"></span>
+                </button>
+              </li>
+              <li class="pagination-li">
+                <button class="pagination-button">
+                  6<span class="MuiTouchRipple-root"></span>
+                </button>
+              </li>
+              <li class="pagination-li">
+                <button class="pagination-button">
+                  7<span class="MuiTouchRipple-root"></span>
+                </button>
+              </li>
+              <li class="pagination-li">
+                <button class="pagination-button">
+                  8<span class="MuiTouchRipple-root"></span>
+                </button>
+              </li>
+              <li class="pagination-li">
+                <button class="pagination-button">
+                  9<span class="MuiTouchRipple-root"></span>
+                </button>
+              </li>
+              <li class="pagination-li">
+                <button class="pagination-button">
+                  10<span class="MuiTouchRipple-root"></span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <div class="pagination-path">
+            <img class="pagination-path-right" src="images/right.svg" alt="">
+          </div>
+        </div>
+        </div>
       </div>
+      
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
   </body>

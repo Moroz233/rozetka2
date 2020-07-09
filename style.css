@@ -1,7 +1,7 @@
-.main-block {
+body,
+* {
   font-family: "Montserrat", sans-serif;
-  font-weight: normal;
-  width: 340px;
+  box-sizing: border-box;
 }
 button {
   background: transparent;
@@ -14,35 +14,33 @@ button {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  margin-top: 25px;
-
   margin-bottom: 20px;
 }
 .multi-range {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
+  width: 100%;
   font-weight: 300;
   font-size: 18px;
   line-height: 200%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 35px;
 }
 
 .js-range-slider {
-  max-width: 240px;
   background: #6f64f8;
   border-radius: 3px;
 }
 .irs {
-  margin-bottom: 30px !important;
+  margin-bottom: 13px !important;
 }
 .irs-line {
   max-width: 340px !important;
   width: 100% !important;
 }
 .line-block {
-  border: 1px solid #d6d6d6;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
 }
 .checbox-br {
   font-family: "Montserrat", sans-serif;
@@ -54,9 +52,7 @@ button {
 .slider-text {
   display: flex;
   justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 25px;
-  padding-top: 30px;
+  padding-top: 35px;
 }
 .s-slider {
   font-family: "Montserrat", sans-serif;
@@ -64,6 +60,9 @@ button {
   font-weight: 600;
   font-size: 18px;
   line-height: 122%;
+}
+.irs--round {
+  margin-bottom: 20px !important;
 }
 .from-to {
   font-family: Montserrat;
@@ -74,6 +73,7 @@ button {
 }
 #radio {
   margin-right: 10px;
+  cursor: pointer;
 }
 input:checked {
   background: #6f64f8;
@@ -148,7 +148,13 @@ input:checked {
 .View-details:hover {
   opacity: 0.7;
 }
-
+.radio-change {
+  cursor: pointer;
+  transition: opacity 0.7s;
+}
+.radio-change:hover {
+  opacity: 0.7;
+}
 .View-details-text {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -582,6 +588,7 @@ button {
   font-size: 18px;
   color: #2c2c2c;
   margin-bottom: 26px;
+  margin-top: 33.5px;
 }
 
 .cb-model {
@@ -832,7 +839,7 @@ button {
   display: flex;
   min-width: 350px;
   flex-direction: column;
-  background: #ffffff;
+
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.13);
   border-radius: 8px;
   padding: 25px;

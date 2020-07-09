@@ -864,3 +864,28 @@ button {
   width: 100%;
   margin-left: 30px;
 }
+.settings-block {
+  max-width: 1570px;
+  background: #b3d4fc;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 29px;
+}
+.card-actions-block {
+  line-height: 29px;
+  font-size: 24px;
+  color: #2c2c2c;
+}
+.icon-path2 {
+  border: 1px solid #979797;
+}
+.icon-home2 {
+}
+.icon-chevrons-right {
+}
+.ecommerce {
+}
+.electronics {
+}
+.settings {
+}

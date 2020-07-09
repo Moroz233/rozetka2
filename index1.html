@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="pagination1.css" />
+    <link rel="stylesheet" href="media1.css">
+
+    <!--Plugin CSS file with desired skin-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-block">
+      <div class="multi-range">
+        <h2 class="multi-range-text">multi-range</h2>
+        <label class="radio-change">
+          <input type="radio" name="raddioc" id="radio" /><span class="radio-text"></span>$10</span>
+        </label>
+        <label class="radio-change">
+          <input type="radio" name="raddioc" id="radio" /><span class="radio-text">$10-$100</span>
+        </label>
+        <label class="radio-change">
+          <input type="radio" name="raddioc" id="radio" /><span class="radio-text">$100-$500</span>
+        </label>
+        <label class="radio-change">
+          <input type="radio" name="raddioc" id="radio" /><span class="radio-text">$500</span>
+        </label>
+        <label class="radio-change">
+          <input type="radio" name="raddioc" id="radio" /><span class="radio-text">  All</span>
+        </label>
+      </div>
+      <div class="line-block"></div>
+      <div class="slider-text">
+        <span class="s-slider">Slider</span>
+        <span class="from-to">1.99 - 4098</span>
+      </div>
+      <div class="slider-block">
+        <input
+          type="text"
+          class="js-range-slider"
+          name="my_range"
+          value=""
+          data-type="double"
+          skin="round"
+        />
+      </div>
+      <div class="line-block"></div>
+      </div>
+    </div>
+    <section class="statistic">
+      <div class="statistic-block">
+        <h2 class="statistic-h">2.7K</h2>
+        <span class="statistic-span">Avg Sessions</span>
+        <div class="statistic-pz-green">
+          +5.2%
+          <div class="statistic-pz">vs last 7 days</div>
+        </div>
+        <button class="View-details">
+          <p class="View-details-text">View Details</p>
+        </button>
+        <div class="border-line-block"></div>
+        <div class="scale">
+          <div class="Goal">
+            <p class="Goal-text">Goal: $1000000</p>
+            <div class="scale-statistic">
+              <div class="scale-statistic-color"></div>
+            </div>
+          </div>
+          <div class="Retention">
+            <p class="Retention-text">Retention: 90%</p>
+            <div class="scale-statistic">
+              <div class="scale-statistic-color-red"></div>
+            </div>
+          </div>
+          <div class="Users">
+            <p class="Users-text">Users: 100K</p>
+            <div class="scale-statistic">
+              <div class="scale-statistic-color-orange"></div>
+            </div>
+          </div>
+          <div class="Duration">
+            <p class="Duration-text">Duration: 1yr</p>
+            <div class="scale-statistic">
+              <div class="scale-statistic-color-green"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="list-button">
+        <p class="list">Last 7 days</p>
+        <img class="down" src="images/chevron-down.svg" alt="" />
+      </div>
+    </section>
+    <button class="button-block">
+      <p class="button-block-text">CLEAR ALL FILTERS</p>
+    </button>
+    <div class="pagination-block">
+      <div class="pagination-path">
+        <img class="pagination-path-left" src="images/left.svg" alt="">
+      </div>
+    <nav class="pagination">
+      <ul class="pagination-ul">
+        <li class="pagination-li">
+          <button class="pagination-button">
+            1<span class="MuiTouchRipple-root"> </span>
+          </button>
+        </li>
+        <li class="pagination-li">
+          <button class="pagination-button">
+            2<span class="MuiTouchRipple-root"> </span>
+          </button>
+        </li>
+        <li class="pagination-li">
+          <button class="pagination-button">
+            3<span class="MuiTouchRipple-root"> </span>
+          </button>
+        </li>
+        <li class="pagination-li">
+          <button class="pagination-button">
+            4<span class="MuiTouchRipple-root"></span>
+          </button>
+        </li>
+        <li class="pagination-li">
+          <button class="pagination-button">
+            5<span class="MuiTouchRipple-root"></span>
+          </button>
+        </li>
+        <li class="pagination-li">
+          <button class="pagination-button">
+            6<span class="MuiTouchRipple-root"></span>
+          </button>
+        </li>
+        <li class="pagination-li">
+          <button class="pagination-button">
+            7<span class="MuiTouchRipple-root"></span>
+          </button>
+        </li>
+        <li class="pagination-li">
+          <button class="pagination-button">
+            8<span class="MuiTouchRipple-root"></span>
+          </button>
+        </li>
+        <li class="pagination-li">
+          <button class="pagination-button">
+            9<span class="MuiTouchRipple-root"></span>
+          </button>
+        </li>
+        <li class="pagination-li">
+          <button class="pagination-button">
+            10<span class="MuiTouchRipple-root"></span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="pagination-path">
+      <img class="pagination-path-right" src="images/right.svg" alt="">
+    </div>
+  </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  </body>
+  <script src="script.js"></script>
+</html>

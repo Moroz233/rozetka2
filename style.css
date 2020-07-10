@@ -9,8 +9,6 @@ button {
   outline: none;
 }
 .multi-range-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
@@ -42,15 +40,12 @@ button {
   border-top: 1px solid #d6d6d6;
   border-bottom: 1px solid #d6d6d6;
 }
-
 .slider-text {
   display: flex;
   justify-content: space-between;
   padding-top: 35px;
 }
 .s-slider {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 122%;
@@ -59,13 +54,11 @@ button {
   margin-bottom: 20px !important;
 }
 .from-to {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 122%;
 }
-#radio {
+.radio {
   margin-right: 10px;
   cursor: pointer;
 }
@@ -78,8 +71,7 @@ input:checked {
   margin-top: 22px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
   border-radius: 8px;
-  max-width: 771;
-  width: 100%;
+  width: 770px;
   display: flex;
   padding-bottom: 20px;
   margin-bottom: 34px;
@@ -92,15 +84,11 @@ input:checked {
   width: 100%;
 }
 .statistic-h {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 121%;
 }
 .statistic-span {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 121%;
@@ -108,22 +96,16 @@ input:checked {
   padding-top: 3px;
 }
 .statistic-pz-green {
-  font-family: "Montserrat", sans-serif;
   color: #2dcd7a;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 121%;
   margin-top: 12px;
   display: flex;
 }
 .statistic-pz {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 121%;
-  display: flex;
+
   color: black;
   margin-left: 3px;
 }
@@ -150,9 +132,6 @@ input:checked {
   opacity: 0.7;
 }
 .View-details-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 119%;
   color: #fff;
@@ -172,33 +151,21 @@ input:checked {
   grid-column-gap: 28px;
 }
 .Goal-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 119%;
   margin-top: 11px;
 }
 .Retention-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 119%;
   margin-top: 11px;
 }
 .Users-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 119%;
   margin-top: 11px;
 }
 .Duration-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 119%;
   margin-top: 11px;
@@ -253,9 +220,6 @@ input:checked {
   padding-left: 5px;
 }
 .list {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 121%;
   display: flex;
@@ -277,9 +241,6 @@ input:checked {
   opacity: 0.8;
 }
 .button-block-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 117%;
   color: #fff;
@@ -765,73 +726,6 @@ button {
   width: 100%;
 }
 
-@media all and (max-width: 1450px) {
-  .first-line-blocks {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  .statistic {
-    width: 100%;
-  }
-
-  .congratulations {
-    width: 100%;
-  }
-
-  .statistics {
-    width: 50%;
-  }
-
-  .similar-blocks {
-    margin: 30px 0;
-    width: 100%;
-  }
-
-  .statistics-img-bottom {
-    margin-top: auto;
-    width: 100%;
-  }
-}
-
-@media all and (max-width: 800px) {
-  .similar-blocks {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .statistics {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .statistics:first-of-type {
-    margin-right: 0;
-  }
-
-  .congratulations {
-    width: 100%;
-    background-image: linear-gradient(201.26deg, #a59bff 0%, #7e72f2 100%);
-    margin-right: 0;
-  }
-
-  .cong-done {
-    padding: 0 30px;
-    text-align: center;
-  }
-
-  .first-line-blocks {
-    margin-right: 30px;
-  }
-
-  .cong-title {
-    text-align: center;
-  }
-  .cong-title {
-    margin: 0 20px 20px 20px;
-  }
-}
-
 .sidebar {
   display: flex;
   min-width: 350px;
@@ -849,8 +743,7 @@ button {
 .main-content {
   background-color: #f9f9f9;
   padding: 22px 42px 35px;
-  display: flex;
-  flex-direction: column;
+
   margin-left: 280px;
   width: calc(100% - 280px);
 }

@@ -675,9 +675,11 @@ button {
   line-height: 34px;
   color: #ffffff;
   margin-bottom: 15px;
+  padding: 0 15px;
 }
 
 .cong-done {
+  padding: 0 15px;
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;

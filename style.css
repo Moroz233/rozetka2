@@ -82,13 +82,13 @@ input:checked {
 .statistic {
   position: relative;
   margin-top: 22px;
-  margin-left: 35px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
   border-radius: 8px;
-  max-width: 770px;
+  max-width: 771;
   width: 100%;
   display: flex;
   padding-bottom: 20px;
+  margin-bottom: 34px;
 }
 .statistic-block {
   padding-top: 34px;
@@ -272,6 +272,7 @@ input:checked {
   transition: opacity 0.7s;
   cursor: pointer;
   width: 100%;
+  height: 56px;
   max-width: 370px;
   background-color: #6f64f8;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
@@ -450,6 +451,8 @@ button {
   display: flex;
   margin-bottom: 20px;
   margin-left: auto;
+}
+.filter {
 }
 .filter-button {
   background: #ffffff;
@@ -776,6 +779,9 @@ button {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+  }
+  .statistic {
+    width: 100%;
   }
 
   .congratulations {

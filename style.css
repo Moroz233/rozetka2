@@ -873,7 +873,7 @@ button {
 }
 .settings-block {
   max-width: 1570px;
-  background: #b3d4fc;
+  background: #f9f9f9;
   margin-top: 20px;
   margin-bottom: 30px;
   height: 29px;
@@ -882,17 +882,30 @@ button {
   line-height: 29px;
   font-size: 24px;
   color: #2c2c2c;
+  margin-right: 16px;
 }
 .icon-path2 {
   border: 1px solid #979797;
+  margin-right: 19px;
 }
 .icon-home2 {
+  border: 1px solid #7e72f2;
 }
 .icon-chevrons-right {
+  margin-right: 10px;
+  margin-left: 10px;
 }
-.ecommerce {
+.icon-ecommerce {
+  font-size: 14px;
+  line-height: 17px;
 }
-.electronics {
+.icon-electronics {
+  font-size: 14px;
+  line-height: 17px;
+  color: #2c2c2c;
+  margin-right: 50px;
 }
-.settings {
+.icon-settings {
+  margin-left: auto;
+  background: #7e72f2;
 }

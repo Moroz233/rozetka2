@@ -9,8 +9,6 @@ button {
   outline: none;
 }
 .multi-range-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
@@ -43,8 +41,6 @@ button {
   border-bottom: 1px solid #d6d6d6;
 }
 .checbox-br {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 200%;
@@ -55,8 +51,6 @@ button {
   padding-top: 35px;
 }
 .s-slider {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 122%;
@@ -65,13 +59,11 @@ button {
   margin-bottom: 20px !important;
 }
 .from-to {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 122%;
 }
-#radio {
+.radio {
   margin-right: 10px;
   cursor: pointer;
 }
@@ -97,15 +89,11 @@ input:checked {
   width: 100%;
 }
 .statistic-h {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 121%;
 }
 .statistic-span {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 121%;
@@ -113,22 +101,16 @@ input:checked {
   padding-top: 3px;
 }
 .statistic-pz-green {
-  font-family: "Montserrat", sans-serif;
   color: #2dcd7a;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 121%;
   margin-top: 12px;
   display: flex;
 }
 .statistic-pz {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 121%;
-  display: flex;
+
   color: black;
   margin-left: 3px;
 }
@@ -155,9 +137,6 @@ input:checked {
   opacity: 0.7;
 }
 .View-details-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 119%;
   color: #fff;
@@ -177,33 +156,21 @@ input:checked {
   grid-column-gap: 28px;
 }
 .Goal-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 119%;
   margin-top: 11px;
 }
 .Retention-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 119%;
   margin-top: 11px;
 }
 .Users-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 119%;
   margin-top: 11px;
 }
 .Duration-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 119%;
   margin-top: 11px;
@@ -258,9 +225,6 @@ input:checked {
   padding-left: 5px;
 }
 .list {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 121%;
   display: flex;
@@ -282,9 +246,6 @@ input:checked {
   opacity: 0.8;
 }
 .button-block-text {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 117%;
   color: #fff;

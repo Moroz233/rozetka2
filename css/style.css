@@ -54,12 +54,8 @@ button {
   margin-top: 25px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
   border-radius: 8px;
-<<<<<<< HEAD:style.css
-  width: 480px;
-=======
-  max-width: 763px;
-  width: 100%;
->>>>>>> 8e1833c0b4022207e3c4be93de9a5052cabc1c61:css/style.css
+  width: 50%;
+  max-width: calc(50% - 15px);
   display: flex;
   padding-bottom: 20px;
   margin-bottom: 25px;

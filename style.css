@@ -25,6 +25,17 @@ button {
   margin-bottom: 35px;
 }
 
+.js-range-slider {
+  background: #6f64f8;
+  border-radius: 3px;
+}
+.irs {
+  margin-bottom: 13px !important;
+}
+.irs-line {
+  max-width: 340px !important;
+  width: 100% !important;
+}
 .line-block {
   border-top: 1px solid #d6d6d6;
   border-bottom: 1px solid #d6d6d6;
@@ -39,7 +50,9 @@ button {
   font-size: 18px;
   line-height: 122%;
 }
-
+.irs--round {
+  margin-bottom: 20px !important;
+}
 .from-to {
   font-weight: 600;
   font-size: 18px;
@@ -49,17 +62,19 @@ button {
   margin-right: 10px;
   cursor: pointer;
 }
+input:checked {
+  background: #6f64f8;
+}
 
 .statistic {
-  margin-top: 25px;
+  position: relative;
+  margin-top: 22px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
   border-radius: 8px;
-  width: 50%;
-  max-width: calc(50% - 15px);
+  width: 480px;
   display: flex;
   padding-bottom: 20px;
-  margin-bottom: 25px;
-  padding-right: 30px;
+  margin-bottom: 34px;
 }
 .statistic-block {
   padding-top: 34px;
@@ -94,7 +109,7 @@ button {
   color: black;
   margin-left: 3px;
 }
-.view-details {
+.View-details {
   width: 100%;
   max-width: 340px;
   height: 36px;
@@ -106,7 +121,7 @@ button {
   align-items: center;
   transition: opacity 0.7s;
 }
-.view-details:hover {
+.View-details:hover {
   opacity: 0.7;
 }
 .radio-change {
@@ -116,7 +131,7 @@ button {
 .radio-change:hover {
   opacity: 0.7;
 }
-.view-details-text {
+.View-details-text {
   font-size: 16px;
   line-height: 119%;
   color: #fff;
@@ -135,22 +150,22 @@ button {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 28px;
 }
-.goal-text {
+.Goal-text {
   font-size: 16px;
   line-height: 119%;
   margin-top: 11px;
 }
-.retention-text {
+.Retention-text {
   font-size: 16px;
   line-height: 119%;
   margin-top: 11px;
 }
-.users-text {
+.Users-text {
   font-size: 16px;
   line-height: 119%;
   margin-top: 11px;
 }
-.duration-text {
+.Duration-text {
   font-size: 16px;
   line-height: 119%;
   margin-top: 11px;
@@ -190,22 +205,21 @@ button {
   border-radius: 2.5px;
   margin-top: 5px;
 }
-.statistic-list-button {
+.list-button {
   display: flex;
   justify-content: space-between;
+
   padding-top: 22px;
   padding-right: 30px;
-  width: 98.6px;
-  height: 20px;
   white-space: nowrap;
 }
-.statistic-down-image {
+.down {
   width: 15px;
   height: 10px;
   margin-top: 5px;
   padding-left: 5px;
 }
-.statistic-list {
+.list {
   font-size: 14px;
   line-height: 121%;
   display: flex;
@@ -232,7 +246,18 @@ button {
   color: #fff;
   white-space: nowrap;
 }
-
+.irs-bar {
+  background-color: #6f64f8 !important;
+  border-radius: 3px;
+  width: 100%;
+  width: 340px;
+}
+.irs-handle {
+  background-color: #6f64f8 !important;
+  width: 20px !important;
+  height: 20px !important;
+  border: none !important;
+}
 button {
   background: transparent;
   border: none;
@@ -651,15 +676,12 @@ button {
   line-height: 34px;
   color: #ffffff;
   margin-bottom: 15px;
-  padding: 0 15px;
 }
 
 .cong-done {
-  padding: 0 15px;
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
-  text-align: center;
 }
 
 .statistics {
@@ -746,6 +768,8 @@ button {
   background: #f9f9f9;
   margin-top: 20px;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 .card-actions-block {
   line-height: 29px;
@@ -755,6 +779,8 @@ button {
 }
 .icon-path2 {
   border: 1px solid #979797;
+  height: 32px;
+  width: 1px;
   margin-right: 19px;
 }
 .icon-home2 {
@@ -767,13 +793,12 @@ button {
 .icon-ecommerce {
   font-size: 14px;
   line-height: 17px;
+  color: #7467f0;
 }
 .icon-electronics {
   font-size: 14px;
   line-height: 17px;
+  font-weight: 500;
   color: #2c2c2c;
   margin-right: 50px;
-}
-.icon-settings {
-  background: #7e72f2;
 }

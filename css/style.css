@@ -758,6 +758,7 @@ button {
   font-size: 14px;
   line-height: 17px;
   color: #2c2c2c;
+  cursor: pointer;
 }
 
 .header-action-bar-img {
@@ -800,8 +801,6 @@ button {
 }
 
 .settings-block {
-  max-width: 1570px;
-  background: #f9f9f9;
   margin-top: 20px;
   margin-bottom: 30px;
   display: flex;

@@ -1,0 +1,22 @@
+.irs {
+  margin-bottom: 13px !important;
+}
+.irs-line {
+  max-width: 340px !important;
+  width: 100% !important;
+}
+.irs--round {
+  margin-bottom: 20px !important;
+}
+.irs-bar {
+  background-color: #6f64f8 !important;
+  border-radius: 3px;
+  width: 100%;
+  width: 340px;
+}
+.irs-handle {
+  background-color: #6f64f8 !important;
+  width: 20px !important;
+  height: 20px !important;
+  border: none !important;
+}

@@ -18,16 +18,16 @@
       flex-direction: column;
     }
 
-    .statistics {
+    .chart {
       width: 100%;
     }
 
-    .statistics:first-of-type{
+    .chart:first-of-type{
       margin-bottom: 30px;
     }
   
   
-    .statistics:first-of-type {
+    .chart:first-of-type {
       margin-right: 0;
     }
   
@@ -55,7 +55,7 @@
     .cong-text{
       margin: 0;
     }
-    .statistics-text {
+    .chart-text {
       margin: 0 15px;
     }
     .similar-blocks {
@@ -63,7 +63,7 @@
       width: 100%;
     }
   
-    .statistics-img-bottom {
+    .chart-img-bottom {
       margin-top: auto;
       width: 100%;
     }

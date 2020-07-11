@@ -1,3 +1,7 @@
+.bottom-pagination {
+  width: 100%;
+}
+
 .pagination-block {
   display: flex;
   justify-content: center;

@@ -745,11 +745,25 @@ button {
   width: 100%;
   margin-left: 30px;
 }
+
+.top {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+  border-radius: 8px;
+}
+
 .settings-block {
   max-width: 1570px;
   background: #f9f9f9;
   margin-top: 20px;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 .card-actions-block {
   line-height: 29px;
@@ -759,6 +773,7 @@ button {
 }
 .icon-path2 {
   border: 1px solid #979797;
+  height: 32px;
   margin-right: 19px;
 }
 .icon-home2 {
@@ -771,9 +786,11 @@ button {
 .icon-ecommerce {
   font-size: 14px;
   line-height: 17px;
+  color: #7467f0;
 }
 .icon-electronics {
   font-size: 14px;
+  font-weight: 500;
   line-height: 17px;
   color: #2c2c2c;
   margin-right: 50px;

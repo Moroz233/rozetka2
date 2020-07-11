@@ -25,6 +25,17 @@ button {
   margin-bottom: 35px;
 }
 
+.js-range-slider {
+  background: #6f64f8;
+  border-radius: 3px;
+}
+.irs {
+  margin-bottom: 13px !important;
+}
+.irs-line {
+  max-width: 340px !important;
+  width: 100% !important;
+}
 .line-block {
   border-top: 1px solid #d6d6d6;
   border-bottom: 1px solid #d6d6d6;
@@ -39,30 +50,30 @@ button {
   font-size: 18px;
   line-height: 122%;
 }
-
+.irs--round {
+  margin-bottom: 20px !important;
+}
 .from-to {
   font-weight: 600;
   font-size: 18px;
   line-height: 122%;
 }
 .radio {
+  margin-right: 10px;
   cursor: pointer;
 }
-
-.radio-text {
-  margin-left: 10px;
+input:checked {
+  background: #6f64f8;
 }
 
 .statistic {
-  margin-top: 25px;
+  position: relative;
+  margin-top: 22px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
   border-radius: 8px;
-  width: 50%;
-  max-width: calc(50% - 15px);
+  width: 480px;
   display: flex;
   padding-bottom: 20px;
-  padding-right: 30px;
-  background-color: #ffffff;
 }
 .statistic-block {
   padding-top: 34px;
@@ -97,7 +108,7 @@ button {
   color: black;
   margin-left: 3px;
 }
-.view-details {
+.View-details {
   width: 100%;
   max-width: 340px;
   height: 36px;
@@ -109,7 +120,7 @@ button {
   align-items: center;
   transition: opacity 0.7s;
 }
-.view-details:hover {
+.View-details:hover {
   opacity: 0.7;
 }
 .radio-change {
@@ -119,7 +130,7 @@ button {
 .radio-change:hover {
   opacity: 0.7;
 }
-.view-details-text {
+.View-details-text {
   font-size: 16px;
   line-height: 119%;
   color: #fff;
@@ -138,12 +149,26 @@ button {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 28px;
 }
-.statistic-text {
+.Goal-text {
   font-size: 16px;
   line-height: 119%;
   margin-top: 11px;
 }
-
+.Retention-text {
+  font-size: 16px;
+  line-height: 119%;
+  margin-top: 11px;
+}
+.Users-text {
+  font-size: 16px;
+  line-height: 119%;
+  margin-top: 11px;
+}
+.Duration-text {
+  font-size: 16px;
+  line-height: 119%;
+  margin-top: 11px;
+}
 .scale-statistic {
   width: 100%;
   height: 4px;
@@ -179,22 +204,21 @@ button {
   border-radius: 2.5px;
   margin-top: 5px;
 }
-.statistic-list-button {
+.list-button {
   display: flex;
   justify-content: space-between;
+
   padding-top: 22px;
   padding-right: 30px;
-  width: 98.6px;
-  height: 20px;
   white-space: nowrap;
 }
-.statistic-down-image {
+.down {
   width: 15px;
   height: 10px;
   margin-top: 5px;
   padding-left: 5px;
 }
-.statistic-list {
+.list {
   font-size: 14px;
   line-height: 121%;
   display: flex;
@@ -210,9 +234,7 @@ button {
   background-color: #6f64f8;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
   border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 17px 98px 18px 98px;
 }
 .button-block:hover {
   opacity: 0.8;
@@ -223,7 +245,18 @@ button {
   color: #fff;
   white-space: nowrap;
 }
-
+.irs-bar {
+  background-color: #6f64f8 !important;
+  border-radius: 3px;
+  width: 100%;
+  width: 340px;
+}
+.irs-handle {
+  background-color: #6f64f8 !important;
+  width: 20px !important;
+  height: 20px !important;
+  border: none !important;
+}
 button {
   background: transparent;
   border: none;
@@ -339,7 +372,7 @@ button {
 
 .icon-home {
   position: absolute;
-  background-image: url("../images/svg/home.svg");
+  background-image: url("./images/home.svg");
   background-size: cover;
   height: 16px;
   width: 14px;
@@ -349,7 +382,7 @@ button {
 
 .icon-circle {
   position: absolute;
-  background-image: url("../images/svg/circle.svg");
+  background-image: url("./images/circle.svg");
   background-size: cover;
   height: 10px;
   width: 10px;
@@ -358,7 +391,7 @@ button {
 }
 .icon-oval {
   position: absolute;
-  background-image: url("../images/svg/circle.svg");
+  background-image: url("./images/oval.svg");
   background-size: cover;
   height: 10px;
   width: 10px;
@@ -431,7 +464,7 @@ button {
   max-width: calc(50% - 15px);
   width: 100%;
   margin-left: auto;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .timeline-container-item {
   display: flex;
@@ -500,14 +533,9 @@ button {
   padding-bottom: 25px;
   margin-bottom: 25px;
 }
-.brand:last-of-type {
-  margin-bottom: 0;
-  border-bottom: none;
-  padding-bottom: 0;
-}
 
 .brand:last-of-type {
-  margin-top: 25px;
+  margin-bottom: 0px;
 }
 
 .brand-title {
@@ -515,15 +543,9 @@ button {
   font-size: 18px;
   color: #2c2c2c;
   margin-bottom: 26px;
-}
-
-.brand-title-category {
-  font-weight: 600;
-  font-size: 18px;
-  color: #2c2c2c;
-  margin-bottom: 26px;
   margin-top: 33.5px;
 }
+
 .cb-model {
   cursor: pointer;
 }
@@ -562,6 +584,18 @@ button {
   grid-gap: 8px;
 }
 
+.line-top {
+  height: 1px;
+  background-color: #d6d6d6;
+  margin-bottom: 25px;
+}
+
+.line-bottom {
+  height: 1px;
+  background-color: #d6d6d6;
+  margin-top: 25px;
+}
+
 .search {
   display: flex;
   background: #ffffff;
@@ -585,7 +619,7 @@ button {
   position: absolute;
   top: calc(50% - 9px);
   right: 20px;
-  background-image: url("../images/svg/search.svg");
+  background-image: url("./svg/search.svg");
   background-size: cover;
   cursor: pointer;
   transition: opacity 0.7s;
@@ -641,18 +675,15 @@ button {
   line-height: 34px;
   color: #ffffff;
   margin-bottom: 15px;
-  padding: 0 15px;
 }
 
 .cong-done {
-  padding: 0 15px;
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
-  text-align: center;
 }
 
-.chart {
+.statistics {
   background-color: #fff;
   background-size: 100%;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.13);
@@ -664,15 +695,15 @@ button {
   align-items: flex-start;
 }
 
-.chart:first-of-type {
+.statistics:first-of-type {
   margin-right: 30px;
 }
 
-.chart-img-top {
+.statistics-img-top {
   margin: 25px 275px 0 32px;
 }
 
-.chart-balance {
+.statistics-balance {
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
@@ -681,7 +712,7 @@ button {
   margin-top: 21px;
 }
 
-.chart-text {
+.statistics-text {
   font-weight: 500;
   font-size: 14px;
   line-height: 36px;
@@ -689,7 +720,7 @@ button {
   margin-left: 32px;
 }
 
-.chart-img-bottom {
+.statistics-img-bottom {
   margin-top: 15px;
   margin-top: auto;
   width: 100%;
@@ -703,7 +734,6 @@ button {
   border-radius: 8px;
   padding: 25px;
   margin-bottom: 30px;
-  background-color: #ffffff;
 }
 
 .main-container {
@@ -725,7 +755,6 @@ button {
 }
 .shop-container {
   display: flex;
-  width: 100%;
 }
 .shop-content {
   display: flex;
@@ -733,18 +762,6 @@ button {
   width: 100%;
   margin-left: 30px;
 }
-
-.top {
-  display: flex;
-  flex-direction: column;
-}
-
-.header {
-  background: #ffffff;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
-  border-radius: 8px;
-}
-
 .settings-block {
   max-width: 1570px;
   background: #f9f9f9;
@@ -757,15 +774,17 @@ button {
   line-height: 29px;
   font-size: 24px;
   color: #2c2c2c;
+  margin-right: 16px;
+}
+.icon-path2 {
+  border: 1px solid #979797;
+  height: 32px;
+  width: 1px;
   margin-right: 19px;
-  padding-right: 16px;
-  border-right: 1px solid #979797;
 }
-
-.card-action-home {
-  border: 0;
+.icon-home2 {
+  border: 1px solid #7e72f2;
 }
-
 .icon-chevrons-right {
   margin-right: 10px;
   margin-left: 10px;
@@ -777,14 +796,8 @@ button {
 }
 .icon-electronics {
   font-size: 14px;
-  font-weight: 500;
   line-height: 17px;
+  font-weight: 500;
   color: #2c2c2c;
   margin-right: 50px;
-}
-.icon-settings {
-  background: #7e72f2;
-}
-.timeline-statistic {
-  display: flex;
 }

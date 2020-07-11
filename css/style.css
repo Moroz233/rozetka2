@@ -107,18 +107,12 @@ button {
   margin-top: 30px;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.7s;
 }
-.view-details:hover {
-  opacity: 0.7;
-}
+
 .radio-change {
   cursor: pointer;
-  transition: opacity 0.7s;
 }
-.radio-change:hover {
-  opacity: 0.7;
-}
+
 .view-details-text {
   font-size: 16px;
   line-height: 119%;
@@ -202,7 +196,6 @@ button {
 }
 
 .button-block {
-  transition: opacity 0.7s;
   cursor: pointer;
   width: 100%;
   height: 56px;
@@ -214,9 +207,7 @@ button {
   justify-content: center;
   align-items: center;
 }
-.button-block:hover {
-  opacity: 0.8;
-}
+
 .button-block-text {
   font-size: 18px;
   line-height: 117%;
@@ -243,6 +234,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .card {
   max-width: 371px;
@@ -288,16 +280,13 @@ button {
   color: #fff;
   border: 0px solid transparent;
   padding: 12px 0;
-  transition: opacity 0.7s;
   cursor: pointer;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
   border-radius: 0px 0px 8px 8px;
 }
-.card-button:hover {
-  opacity: 0.7;
-}
+
 .nav-container {
   height: 100vh;
   width: 280px;
@@ -531,12 +520,7 @@ button {
 .cb-line {
   display: flex;
   justify-content: space-between;
-  transition: opacity 0.7s;
   cursor: pointer;
-}
-
-.cb-line:hover {
-  opacity: 0.7;
 }
 
 .cb-quantity {
@@ -588,11 +572,6 @@ button {
   background-image: url("../images/svg/search.svg");
   background-size: cover;
   cursor: pointer;
-  transition: opacity 0.7s;
-}
-
-.search-button:hover {
-  opacity: 0.7;
 }
 
 .search button {
@@ -762,6 +741,7 @@ button {
 
 .header-icons-img {
   margin-right: 22px;
+  cursor: pointer;
 }
 
 .header-icons-img:last-of-type {
@@ -774,6 +754,7 @@ button {
 
 .header-action-bar-title {
   margin-right: 29px;
+  font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #2c2c2c;
@@ -781,6 +762,7 @@ button {
 
 .header-action-bar-img {
   margin-right: 22px;
+  cursor: pointer;
 }
 
 .header-action-bar-img:last-of-type {
@@ -796,15 +778,25 @@ button {
 
 .header-action-bar-nick-top {
   font-size: 14px;
+  font-weight: 500;
   line-height: 17px;
   color: #2c2c2c;
 }
 
 .header-action-bar-nick-bottom {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 11px;
   line-height: 13px;
   color: #2c2c2c;
+}
+
+.header-action-bar-avatar {
+  height: 34px;
+  width: 34px;
+  background-color: #ea5455;
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
 }
 
 .settings-block {
@@ -849,4 +841,11 @@ button {
 }
 .timeline-statistic {
   display: flex;
+}
+
+.hoverable {
+  transition: opacity 0.3s;
+}
+.hoverable:hover {
+  opacity: 0.8;
 }

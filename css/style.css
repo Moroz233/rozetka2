@@ -498,10 +498,6 @@ button {
   padding-bottom: 0;
 }
 
-.brand:last-of-type {
-  margin-top: 25px;
-}
-
 .brand-title {
   font-weight: 600;
   font-size: 18px;

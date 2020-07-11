@@ -373,15 +373,18 @@ button {
   margin-right: 13px;
   padding: 0 20px;
   height: 40px;
+  cursor: pointer;
 }
 .icon-square {
   margin-right: 13px;
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 .button2 {
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 .messengers-container {
   display: flex;
@@ -794,6 +797,7 @@ button {
 .header-action-bar-avatar {
   height: 34px;
   width: 34px;
+  border-radius: 50%;
   background-color: #ea5455;
   display: flex;
   align-items: flex-start;
@@ -827,6 +831,7 @@ button {
   font-size: 14px;
   line-height: 17px;
   color: #7467f0;
+  cursor: pointer;
 }
 .icon-electronics {
   font-size: 14px;
@@ -834,6 +839,7 @@ button {
   line-height: 17px;
   color: #2c2c2c;
   margin-right: 50px;
+  cursor: pointer;
 }
 .icon-settings {
   background: #7e72f2;

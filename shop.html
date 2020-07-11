@@ -10,7 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -33,24 +41,20 @@
           <div
             class="nav-container-link messengers-container-item apps-container-item"
           >
-            <img src="./images/svg/mail.svg" alt="mail" class="icon-mail" />
+            <img src="images/svg/mail.svg" alt="mail" class="icon-mail" />
             <button class="mail">Email</button>
           </div>
           <div
             class="nav-container-link messengers-container-item apps-container-item"
           >
-            <img
-              src="./images/svg/message-square.svg"
-              alt="chat"
-              class="icon-chat"
-            />
+            <img src="images/svg/chat.svg" alt="chat" class="icon-chat" />
             <button class="chat">Chat</button>
           </div>
           <div
             class="nav-container-link messengers-container-item apps-container-item"
           >
             <img
-              src="./images/svg/calendar.svg"
+              src="images/svg/calendar.svg"
               alt="calendar"
               class="icon-calendar"
             />
@@ -61,183 +65,189 @@
       <div class="main-content">
         <div class="shop-container">
           <div class="filter">
-            <aside class="sidebar">
-              <div class="multi-range">
-                <h2 class="multi-range-text">Multi Range</h2>
-                <label class="radio-change">
-                  <input type="radio" name="raddioc" id="radio" /><span class="radio-text"></span>$10</span>
-                </label>
-                <label class="radio-change">
-                  <input type="radio" name="raddioc" id="radio" /><span class="radio-text">$10-$100</span>
-                </label>
-                <label class="radio-change">
-                  <input type="radio" name="raddioc" id="radio" /><span class="radio-text">$100-$500</span>
-                </label>
-                <label class="radio-change">
-                  <input type="radio" name="raddioc" id="radio" /><span class="radio-text">$500</span>
-                </label>
-                <label class="radio-change">
-                  <input type="radio" name="raddioc" id="radio" /><span class="radio-text">  All</span>
-                </label>
-              </div>
-              <div class="line-block"></div>
-              <div class="slider-text">
+          <aside class="sidebar">
+            <div class="multi-range">
+              <h2 class="multi-range-text">Multi Range</h2>
+              <label class="radio-change">
+                <input type="radio" name="raddioc" class="radio" /><span class="radio-text"></span>$10</span>
+              </label>
+              <label class="radio-change">
+                <input type="radio" name="raddioc" class="radio" /><span class="radio-text">$10-$100</span>
+              </label>
+              <label class="radio-change">
+                <input type="radio" name="raddioc" class="radio" /><span class="radio-text">$100-$500</span>
+              </label>
+              <label class="radio-change">
+                <input type="radio" name="raddioc" class="radio" /><span class="radio-text">$500</span>
+              </label>
+              <label class="radio-change">
+                <input type="radio" name="raddioc" class="radio" /><span class="radio-text">  All</span>
+              </label>
+            </div>
+            <div class="line-block">
+            <div class="slider-text">
                 <span class="s-slider">Slider</span>
                 <span class="from-to">1.99 - 4098</span>
+               </div>
+             <div class="slider-block">
+              <input
+                type="text"
+                class="js-range-slider"
+                name="my_range"
+                value=""
+                data-type="double"
+                skin="round"
+              />
+             </div>
+            </div>
+            <div class="brand">
+              <span class="brand-title-category">Category</span>
+              <div class="checkbox-all">
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">Cell Phones</span>
+                  </div>
+                  <span class="cb-quantity">1920</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">Computer & Tablets</span>
+                  </div>
+                  <span class="cb-quantity">1820</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">Cell Phone Accessories</span>
+                  </div>
+                  <span class="cb-quantity">462</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">Appliances</span>
+                  </div>
+                  <span class="cb-quantity">6556</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">Audio</span>
+                  </div>
+                  <span class="cb-quantity">120</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">iPhone Accessories</span>
+                  </div>
+                  <span class="cb-quantity">353</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">Cameras & Camcorders</span>
+                  </div>
+                  <span class="cb-quantity">45</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">iPhone Cases & Clips</span>
+                  </div>
+                  <span class="cb-quantity">465</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">TV & Home Theater</span>
+                  </div>
+                  <span class="cb-quantity">55</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">Small Kithen Appliances</span>
+                  </div>
+                  <span class="cb-quantity">10</span>
+                </label>
               </div>
-              <div class="slider-block">
-                <input type="text"class="js-range-slider"name="my_range"value=""data-type="double" skin="round"/>
-              </div>
-              <div class="line-block"></div>
-              <div class="brand">
-                <span class="brand-title">Category</span>
-                <div class="checkbox-all">
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">Cell Phones</span>
-                    </div>
-                    <span class="cb-quantity">1920</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">Computer & Tablets</span>
-                    </div>
-                    <span class="cb-quantity">1820</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">Cell Phone Accessories</span>
-                    </div>
-                    <span class="cb-quantity">462</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">Appliances</span>
-                    </div>
-                    <span class="cb-quantity">6556</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">Audio</span>
-                    </div>
-                    <span class="cb-quantity">120</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">iPhone Accessories</span>
-                    </div>
-                    <span class="cb-quantity">353</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">Cameras & Camcorders</span>
-                    </div>
-                    <span class="cb-quantity">45</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">iPhone Cases & Clips</span>
-                    </div>
-                    <span class="cb-quantity">465</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">TV & Home Theater</span>
-                    </div>
-                    <span class="cb-quantity">55</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">Small Kithen Appliances</span>
-                    </div>
-                    <span class="cb-quantity">10</span>
-                  </label>
-                </div>
-              </div>
-              <div class="brand">
-                <span class="brand-title">Brand</span>
-                <div class="checkbox-all">
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">Insigni</span>
-                    </div>
-                    <span class="cb-quantity">220</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">Samsung</span>
-                    </div>
-                    <span class="cb-quantity">120</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">Apple</span>
-                    </div>
-                    <span class="cb-quantity">320</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">HP</span>
-                    </div>
-                    <span class="cb-quantity">32</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">Sony</span>
-                    </div>
-                    <span class="cb-quantity">520</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">Metra</span>
-                    </div>
-                    <span class="cb-quantity">55</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">Dyne</span>
-                    </div>
-                    <span class="cb-quantity">120</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">LG</span>
-                    </div>
-                    <span class="cb-quantity">98</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">Canon</span>
-                    </div>
-                    <span class="cb-quantity">99</span>
-                  </label>
-                  <label class="cb-line">
-                    <div class="cb-content">
-                      <input class="cb-model" type="checkbox" />
-                      <span class="cb-name">Speck</span>
-                    </div>
-                    <span class="cb-quantity">575</span>
-                  </label>
-                </div>
+            </div> 
+            <div class="brand">
+              <span class="brand-title">Brand</span>
+              <div class="checkbox-all">
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">Insigni</span>
+                  </div>
+                  <span class="cb-quantity">220</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">Samsung</span>
+                  </div>
+                  <span class="cb-quantity">120</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">Apple</span>
+                  </div>
+                  <span class="cb-quantity">320</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">HP</span>
+                  </div>
+                  <span class="cb-quantity">32</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">Sony</span>
+                  </div>
+                  <span class="cb-quantity">520</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">Metra</span>
+                  </div>
+                  <span class="cb-quantity">55</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">Dyne</span>
+                  </div>
+                  <span class="cb-quantity">120</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">LG</span>
+                  </div>
+                  <span class="cb-quantity">98</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">Canon</span>
+                  </div>
+                  <span class="cb-quantity">99</span>
+                </label>
+                <label class="cb-line">
+                  <div class="cb-content">
+                    <input class="cb-model" type="checkbox" />
+                    <span class="cb-name">Speck</span>
+                  </div>
+                  <span class="cb-quantity">575</span>
+                </label>
               </div>
             </aside>
             <button class="button-block">
@@ -246,11 +256,10 @@
           </div>
           <div class="shop-content">
             <div class="settings-block">
-              <span class="card-actions-block">Card Actions</span>
-              <div class="icon-path2"></div>
+              <div class="card-actions-block">Card Actions</div>
               <button>
-                <img
-                  src="./images/svg/home2.svg"
+                <img class="card-action-home"
+                  src="./images/svg/home1.svg"
                   alt="home2"
                   class="icon-home2"
                 />
@@ -268,13 +277,16 @@
               />
               <span class="icon-electronics">Electronics</span>
             </div>
+          </aside>
+          
+          <div class="shop-content">
             <div class="filter-buttons">
               <button class="button1 filter-button">Default</button>
               <button class="icon-square filter-button">
                 <img src="./images/svg/grid.svg" alt="square" />
               </button>
               <button class="button2 filter-button">
-                <img src="./images/svg/list.svg" alt="search" />
+                <img src="./images/svg/search.svg" alt="search" />
               </button>
             </div>
             <div class="search">
@@ -289,7 +301,7 @@
               <div class="card-padding">
                 <div class="card-top">
                   <div class="card-rating">
-                    <img src="./images/svg/Path (2).svg" alt="rating" />
+                    <img src="images/svg/Path (2).svg" alt="rating" />
                   </div>
                   <span class="card-price">399$</span>
                 </div>
@@ -302,76 +314,74 @@
             </div>
           </div>
         </div>
-        <div class="bottom-pagination">
-          <div class="pagination-block">
-            <div class="pagination-path">
-              <img
-                class="pagination-path-left"
-                src="./images/svg/left.svg"
-                alt=""
-              />
-            </div>
-            <nav class="pagination">
-              <ul class="pagination-ul">
-                <li class="pagination-li">
-                  <button class="pagination-button">
-                    1<span class="MuiTouchRipple-root"> </span>
-                  </button>
-                </li>
-                <li class="pagination-li">
-                  <button class="pagination-button">
-                    2<span class="MuiTouchRipple-root"> </span>
-                  </button>
-                </li>
-                <li class="pagination-li">
-                  <button class="pagination-button">
-                    3<span class="MuiTouchRipple-root"> </span>
-                  </button>
-                </li>
-                <li class="pagination-li">
-                  <button class="pagination-button">
-                    4<span class="MuiTouchRipple-root"></span>
-                  </button>
-                </li>
-                <li class="pagination-li">
-                  <button class="pagination-button">
-                    5<span class="MuiTouchRipple-root"></span>
-                  </button>
-                </li>
-                <li class="pagination-li">
-                  <button class="pagination-button">
-                    6<span class="MuiTouchRipple-root"></span>
-                  </button>
-                </li>
-                <li class="pagination-li">
-                  <button class="pagination-button">
-                    7<span class="MuiTouchRipple-root"></span>
-                  </button>
-                </li>
-                <li class="pagination-li">
-                  <button class="pagination-button">
-                    8<span class="MuiTouchRipple-root"></span>
-                  </button>
-                </li>
-                <li class="pagination-li">
-                  <button class="pagination-button">
-                    9<span class="MuiTouchRipple-root"></span>
-                  </button>
-                </li>
-                <li class="pagination-li">
-                  <button class="pagination-button">
-                    10<span class="MuiTouchRipple-root"></span>
-                  </button>
-                </li>
-              </ul>
-            </nav>
-            <div class="pagination-path">
-              <img class="pagination-path-right" src="./images/svg/right.svg" />
-            </div>
+        
+      </div>
+      <div class="bottom-pagination">
+        <div class="pagination-block">
+          <div class="pagination-path">
+            <img class="pagination-path-left" src="images/svg/left.svg" alt="">
           </div>
+        <nav class="pagination">
+          <ul class="pagination-ul">
+            <li class="pagination-li">
+              <button class="pagination-button">
+                1<span class="MuiTouchRipple-root"> </span>
+              </button>
+            </li>
+            <li class="pagination-li">
+              <button class="pagination-button">
+                2<span class="MuiTouchRipple-root"> </span>
+              </button>
+            </li>
+            <li class="pagination-li">
+              <button class="pagination-button">
+                3<span class="MuiTouchRipple-root"> </span>
+              </button>
+            </li>
+            <li class="pagination-li">
+              <button class="pagination-button">
+                4<span class="MuiTouchRipple-root"></span>
+              </button>
+            </li>
+            <li class="pagination-li">
+              <button class="pagination-button">
+                5<span class="MuiTouchRipple-root"></span>
+              </button>
+            </li>
+            <li class="pagination-li">
+              <button class="pagination-button">
+                6<span class="MuiTouchRipple-root"></span>
+              </button>
+            </li>
+            <li class="pagination-li">
+              <button class="pagination-button">
+                7<span class="MuiTouchRipple-root"></span>
+              </button>
+            </li>
+            <li class="pagination-li">
+              <button class="pagination-button">
+                8<span class="MuiTouchRipple-root"></span>
+              </button>
+            </li>
+            <li class="pagination-li">
+              <button class="pagination-button">
+                9<span class="MuiTouchRipple-root"></span>
+              </button>
+            </li>
+            <li class="pagination-li">
+              <button class="pagination-button">
+                10<span class="MuiTouchRipple-root"></span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div class="pagination-path">
+          <img class="pagination-path-right" src="images/svg/right.svg" alt="">
         </div>
       </div>
+      </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
   </body>
+  <script src="script.js"></script>
 </html>
